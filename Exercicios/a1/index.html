@@ -1,37 +1,54 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> 
+<html lang="pt"> 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Estilos de Texto</title>
-   <style>
-      h1{
-         color: white;
-         background-color: rgb(219, 44, 99);
-         text-align: center;
-      }
-      h2{
-         color: #3950a3;
-         font-family: Verdana;
-         text-align: right;
-      }
-      p{
-         letter-spacing: 3px;
-         font-size: 2em;
-         font-size: 100%;
-      }
-     p.parag2{
-      text-align: right;
-      font-size: 4em;
-      letter-spacing: 20px;
-     }
-   </style>
+  <title>Colors CSS</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="cores css"> 
+  <meta name="author" content="Sara Granja">
+
+<style>
+  h1{
+	text-align: center;
+	margin:20px;
+	padding:50px;
+	}
+	#grad_1{
+background-color:#33FFBD;
+background-image: linear-gradient(#33FFBD, #FFC300);
+}
+#grad_2{
+background-color:#33FFBD;
+background-image: linear-gradient(to right, #33FFBD, #FFC300);
+}
+#grad_3{
+background-color:#33FFBD;
+background-image: linear-gradient(to bottom right, #33FFBD, #FFC300);
+}
+#grad_4{
+background-color:#33FFBD;
+background-image: linear-gradient(300deg, #33FFBD, #FFC300);
+}
+#footer{
+text-align:right;
+}
+</style>
 </head>
+
 <body>
-   <h1>Titulo mais importante do site</h1>
-   <h2>Eu sou o segundo titulo</h2>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nam ab aspernatur accusamus modi suscipit eveniet nemo similique fugiat, quo consequatur voluptas dolorum, repellendus assumenda mollitia facilis provident deleniti rem?</p>
-   <p class="parag2"><i>TEstando o italico para ver se funciona mesmo ou é mentira</i></p>
- <p>testando link <a href="https://www.lipsum.com/feed/html">para acessar o lorem</a></p>
+<h1> A minha primeira página usando gradientes lineares em CSS</h1>
+<div id="grad_1">
+  <h1> Gradiente linear com direção "to bottom" - default</h1>
+</div>
+<div id="grad_2">
+  <h1> Gradiente linear com direção "to right"</h1>
+</div>
+<div id="grad_3">
+  <h1> Gradiente linear com direção "to bottom right"</h1>
+</div>
+<div id="grad_4">
+  <h1> Gradiente linear com direção "300deg"</h1>
+</div>
+<hr>
+<p id="footer"> Feito por Sara Granja, 2020 </p>
 </body>
 </html>
